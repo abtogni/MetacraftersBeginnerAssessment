@@ -35,9 +35,4 @@ contract GateEntryPass {
         // do something once the user has entered
     }
     
-    function withdraw() public onlyOwner {
-        payable(msg.sender).transfer(address(this).balance);
-    }
-    
-    fallback() external payable {}
 }
