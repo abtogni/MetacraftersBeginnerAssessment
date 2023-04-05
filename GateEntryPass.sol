@@ -32,7 +32,6 @@ contract GateEntryPass {
         bool hasPass = authorized[msg.sender];
         assert(hasPass == true);
         require(hasPass, "You need an authorized pass to enter");
-        // do something once the user has entered
     }
     
 }
